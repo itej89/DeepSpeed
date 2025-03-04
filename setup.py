@@ -318,6 +318,7 @@ setup(name='deepspeed',
       install_requires=install_requires,
       extras_require=extras_require,
       packages=find_packages(include=['deepspeed', 'deepspeed.*']),
+      package_dir={"": "."},
       include_package_data=True,
       scripts=scripts,
       classifiers=[
